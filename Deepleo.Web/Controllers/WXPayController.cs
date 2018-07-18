@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Text;
 using Deepleo.Weixin.SDK.Helpers;
-using System.Collections.Specialized;
 using Deepleo.Web.Services;
 using Deepleo.Weixin.SDK.Pay;
-using System.IO;
-using Codeplex.Data;
-using Deepleo.Web.Attribute;
 using Deepleo.Web.Models;
 using System.Xml.Linq;
 

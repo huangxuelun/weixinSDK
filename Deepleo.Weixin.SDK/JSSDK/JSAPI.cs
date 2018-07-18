@@ -22,7 +22,7 @@ namespace Deepleo.Weixin.SDK.JSSDK
         /// </summary>
         /// <param name="access_token">BasicAPI获取的access_token,也可以通过TokenHelper获取</param>
         /// <returns></returns>
-        public static dynamic GetTickect(string access_token)
+        public static dynamic GetTicket(string access_token)
         {
             var url = string.Format("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={0}&type=jsapi", access_token);
             var client = new HttpClient();

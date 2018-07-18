@@ -66,7 +66,7 @@ namespace Deepleo.Commander.Services
                 if (!cache.Contains(appid))
                 {
                     access_token = BasicAPI.GetAccessToken(appid, appSecret).access_token;
-                    var js = JSAPI.GetTickect(access_token);
+                    var js = JSAPI.GetTicket(access_token);
                     jssdk_ticket = js.ticket;
                     var json = DynamicJson.Serialize(new weixin_token { access_token = access_token, jssdk_ticket = jssdk_ticket });
                     var policy = new CacheItemPolicy() { AbsoluteExpiration = DateTime.Now.AddSeconds(ACCESS_TOKEN_EXPIRE_SECONDS) };
@@ -101,7 +101,7 @@ namespace Deepleo.Commander.Services
                 if (!cache.Contains(appid))
                 {
                     access_token = BasicAPI.GetAccessToken(appid, appSecret).access_token;
-                    var js = JSAPI.GetTickect(access_token);
+                    var js = JSAPI.GetTicket(access_token);
                     jssdk_ticket = js.ticket;
                     var json = DynamicJson.Serialize(new weixin_token { access_token = access_token, jssdk_ticket = jssdk_ticket });
                     var policy = new CacheItemPolicy() { AbsoluteExpiration = DateTime.Now.AddSeconds(ACCESS_TOKEN_EXPIRE_SECONDS) };
